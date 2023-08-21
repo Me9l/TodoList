@@ -1,0 +1,19 @@
+.TodoList .searchbar {
+    margin-bottom: 12px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(220,220,220,0.8);
+    box-sizing: border-box;
+    padding: 15px 0px;
+}
+
+.TodoList .searchbar:focus {
+    outline: none;
+    border-bottom: 1px solid #1f93ff;
+}
+
+.TodoList .list_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
