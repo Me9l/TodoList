@@ -6,8 +6,7 @@ const TodoItem = ({id, content, isDone, createDate, onUpdate, onDelete}) => {
     const onChangeCheckbox = () => {
         onUpdate(id);
     }
-
-    //
+    // onClickDelete
     const onClickDelete = () => {
         onDelete(id);
     }
@@ -20,6 +19,7 @@ const TodoItem = ({id, content, isDone, createDate, onUpdate, onDelete}) => {
             </div>
             <div className='title_col'> { content } </div>
             <div className='date_col'> { new Date(createDate).toLocaleDateString() } </div>
+            {/* <div className='date_col'> { createDate } </div> */}
             <div className='btn_col'>
                 <button className='btn btn-danger text-white' onClick={ onClickDelete }> 삭제 </button>
             </div>
